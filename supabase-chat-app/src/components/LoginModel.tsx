@@ -40,7 +40,7 @@ const LoginModal = ({ isModalOpen = false, onClose }: LOGIN_MODAL) => {
   return (
     <Modal
       title="Login"
-      visible={isModalOpen}
+      open={isModalOpen}
       onCancel={onClose}
       okButtonProps={{ style: { display: "none" } }}
       cancelButtonProps={{ style: { display: "none" } }}

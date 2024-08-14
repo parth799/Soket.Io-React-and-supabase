@@ -38,7 +38,7 @@ const SignUpModal = ({ isModalOpen = false, onClose }: SIGNUP_MODAL) => {
   return (
     <Modal
       title="Sign Up"
-      visible={isModalOpen}
+      open={isModalOpen}
       onCancel={onClose}
       okButtonProps={{ style: { display: "none" } }}
       cancelButtonProps={{ style: { display: "none" } }}

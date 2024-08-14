@@ -73,11 +73,11 @@ const useAuth = () => {
         throw sessionError;
       }
 
-      const session = sessionData.session;
-      if (!session) {
-        console.error("No active session found");
-        throw new Error("No active session found");
-      }
+      // const session = sessionData.session;
+      // if (!session) {
+      //   console.error("No active session found");
+      //   throw new Error("No active session found");
+      // }
 
       const { data: userData, error: userError } = await supabaseClient.auth.getUser();
 

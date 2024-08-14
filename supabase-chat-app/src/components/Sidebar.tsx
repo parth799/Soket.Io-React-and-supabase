@@ -31,7 +31,7 @@ const Sidebar = ({ onSelectContact }: { onSelectContact: (contactUser: ContactUs
             .filter((user: ContactUser) => user.username !== userData.username)
             .map((user: ContactUser) => ({
               ...user,
-              lastOnline: user.lastOnline || new Date().toISOString(), // Fallback to current time if lastOnline is missing
+              lastOnline: user.lastOnline || new Date().toISOString(),
             }));
           setContactUsers(otherUsers);
         }
