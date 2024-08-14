@@ -58,7 +58,7 @@ const SignUpModal = ({ isModalOpen = false, onClose }: SIGNUP_MODAL) => {
           <Input onFocus={() => setError("")} />
         </Form.Item>
 
-        <Form.Itema
+        <Form.Item
           label="Email"
           name="email"
           rules={[{ message: "Please input your email!" }]}
