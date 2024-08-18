@@ -9,7 +9,7 @@ const { Text } = Typography;
 interface ContactUser {
   id: string;
   username: string;
-  lastOnline: string; // Add lastOnline field
+  lastOnline: string;
 }
 
 const Sidebar = ({ onSelectContact }: { onSelectContact: (contactUser: ContactUser) => void }) => {
